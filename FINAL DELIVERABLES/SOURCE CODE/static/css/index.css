@@ -1,0 +1,52 @@
+#hero{
+    width: 102%;
+    height: 18vh;
+    color: white;
+    text-align: center;
+    padding-top: 17px;
+}
+.formd{
+    width: 102%;
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.521), rgba(49, 7, 68, 0.055) ),url(../images/machine-learning-1.webp) ;
+    background-position:center top;
+    background-size: cover;
+}
+.formd form{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-control{
+    border-radius: 0rem;
+}
+
+.btn {
+--bs-btn-padding-x: 2rem;
+--bs-btn-padding-y: 0.7rem;
+--bs-btn-font-family: ;
+--bs-btn-font-size: 1.5rem;
+--bs-btn-font-weight: 500;
+border: var(--bs-btn-border-width) solid #cbdb18;
+--bs-btn-border-radius: 0rem;
+}
+
+.btn-success {
+--bs-btn-color: #fff;
+--bs-btn-bg: #19875400;
+--bs-btn-border-color: #19875400;
+--bs-btn-hover-color: #fff;
+--bs-btn-hover-bg: #c9e111;
+--bs-btn-hover-border-color: #cfe90a;
+--bs-btn-focus-shadow-rgb: 60,153,110;
+--bs-btn-active-color: #fff;
+--bs-btn-active-bg: #d2f118;
+--bs-btn-active-border-color: #cfed19;
+--bs-btn-disabled-bg: #bff31c;
+--bs-btn-border-width: 2.5px;
+}
+
+h5{
+color: rgb(212 235 21);
+}

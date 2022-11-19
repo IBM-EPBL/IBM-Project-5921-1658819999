@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engine - Result</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="..\static\css\result.css">
+
+</head>
+<body style="overflow-x: hidden;">
+    <span id="data" style="display: none;">{{data}}</span>
+    <div id="hero" class="bg-dark">
+
+       
+        <div>
+        <marquee><h2>PREDICTIVE ANALYSIS FOR AIRCRAFT ENGINE</h2>
+            <h2>USING MACHINE LEARNING</h2></marquee>
+        </div>
+    </div>
+    <div class="cnt">
+        
+        <center>
+            <img class="icn" id="ic1" >
+            <h2 style="color: white;" id="mn0">ALERT</h2>
+            <br>
+            <h3 style="color: white;" id="mn1">THE ENGINE IS NORMAL</h3>
+            <br>
+            <h4 style="color: white;" id="mn2">NO ANOMALIES FOUND IN THE GIVEN DATA</h4>
+        </center>
+
+        <center><a class="btn btn-primary" href='/'>GO BACK</a></center>
+    </div>
+</body>
+<script>
+let data = document.getElementById("data").innerText;
+if(data=="normal")
+{
+    document.getElementById("ic1").src = "../static/images/like.png";
+    document.getElementById("mn0").innerText = "Done";
+    document.getElementById("mn1").innerText = "THE ENGINE IS NORMAL";
+    document.getElementById("mn2").innerText = "NO ANOMALIES FOUND IN THE GIVEN DATA";
+}
+else if(data=="excess")
+{
+    document.getElementById("ic1").src = "../static/images/error.png";
+    document.getElementById("mn0").innerText = "ALERT";
+    document.getElementById("mn1").innerText = "THE ENGINE REQUIRES IMMEDIATE SERVICE";
+    document.getElementById("mn2").innerText = "EXCESS PERFORMANCE FOUND IN THE GIVEN DATA - ENGINE MAY ENCOUNTER ISSUES WITHIN FEW DAYS";
+
+}
+else{
+    document.getElementById("ic1").src = "../static/images/error.png";
+    document.getElementById("mn0").innerText = "ALERT";
+    document.getElementById("mn1").innerText = "THE ENGINE REQUIRES IMMEDIATE SERVICE";
+    document.getElementById("mn2").innerText = "LOW PERFORMANCE FOUND IN THE GIVEN DATA - ENGINE MAY ENCOUNTER ISSUES WITHIN FEW DAYS";
+}
+
+</script>
+</html>
